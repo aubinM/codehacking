@@ -21,37 +21,37 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Bienvenue</h1>
                                         </div>
-                                        <form class="user">
-                                            <div class="form-group">
-                                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Entrer une adresse email..">
-                                                @error('email')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Mot de passe">
-                                                @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox small">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck" {{ old('remember') ? 'checked' : '' }}>
-                                                           <label class="custom-control-label" for="customCheck">{{ __('Se souvenir de moi') }}</label>
-                                                </div>
-                                            </div>
-                                            <!--                                                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                                                                                Login
-                                                                                            </a>-->
-                                            <button type="submit" class="btn btn-primary btn-user btn-block">
-                                                {{ __('Login') }}
-                                            </button>
 
-                                        </form>
+                                        <div class="form-group">
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Entrer une adresse email..">
+                                            @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Mot de passe">
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox small">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck" {{ old('remember') ? 'checked' : '' }}>
+                                                       <label class="custom-control-label" for="customCheck">{{ __('Se souvenir de moi') }}</label>
+                                            </div>
+                                        </div>
+                                        <!--                                                <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                                                                            Login
+                                                                                        </a>-->
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                                            {{ __('Connexion') }}
+                                        </button>
+
+
                                         <hr>
                                         <div class="text-center">
                                             @if (Route::has('password.request'))
@@ -66,6 +66,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </form>
                     </div>
                 </div>
 
