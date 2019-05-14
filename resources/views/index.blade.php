@@ -1,52 +1,52 @@
 @include('includes.head')
 
-    <body id="page-top">
+<body id="page-top">
 
-        <!-- Page Wrapper -->
-        <div id="wrapper">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
 
-            @include('includes.sidebar')
+        @include('includes.sidebar')
 
-            <!-- Content Wrapper -->
-            <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
 
-                <!-- Main Content -->
-                <div id="content">
-                       
-                    @include('includes.topbar')
+            <!-- Main Content -->
+            <div id="content">
 
-                    <!-- Begin Page Content -->
-                    <div class="container-fluid">
+                @include('includes.topbar')
 
-                        <!-- Page Heading -->
-                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">Tableau de bord</h1>
-                            <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
-                        </div>
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
 
-                        <!-- Content Row -->
-
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Tableau de bord</h1>
+                        <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
-                    <!-- /.container-fluid -->
+
+                    <!-- Content Row -->
 
                 </div>
-                <!-- End of Main Content -->
-
-               @include('includes.footer')
+                <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- End of Main Content -->
+
+            @include('includes.footer')
 
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
 
 
-@include('includes.bottom_scripts')
-        
+    @include('includes.bottom_scripts')
 
 
 
 
-    </body>
+
+</body>
 
 </html>

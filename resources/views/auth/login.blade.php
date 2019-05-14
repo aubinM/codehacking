@@ -23,8 +23,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Entrer une adresse email..">
-                                            @error('email')
+                                            <input id="login" type="text" class="form-control @error('login') is-invalid @enderror" name="login" value="{{ Session::get('login')}}" required autocomplete="on" autofocus placeholder="Login">
+                                            @error('login')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -40,13 +40,11 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck" {{ old('remember') ? 'checked' : '' }}>
+                                                <input type="checkbox" class="custom-control-input" id="customCheck" name="remember" {{ Session::has('login') ? 'checked' : '' }}>
                                                        <label class="custom-control-label" for="customCheck">{{ __('Se souvenir de moi') }}</label>
                                             </div>
                                         </div>
-                                        <!--                                                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                                                                            Login
-                                                                                        </a>-->
+
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             {{ __('Connexion') }}
                                         </button>
