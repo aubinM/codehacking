@@ -15,3 +15,4 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('index');
+Route::get('/enregistrements','RecordsController@index')->name('enregistrements');
