@@ -27,11 +27,9 @@ $(document).ready(function () {
         },
         fixedHeader: {
             header: true,
-            headerOffset: -5
-        },
-        scrollY:        "300px",
-        scrollX:        true,
-        scrollCollapse: true
+            headerOffset: -10
+        }
 
     });
 });
+

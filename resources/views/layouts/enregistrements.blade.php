@@ -33,33 +33,33 @@
                                   <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>-->
 
                         <!-- DataTales Example -->
-                        <div class="card shadow mb-">
+<!--                        <div class="card shadow mb-">
 
-                            <div class="card-body">
+                            <div class="card-body">-->
                                 <div class="table">
-                                    <table class="table table-bordered" id="dataTable" width="100%" >
+                                    <table class="table table-responsive table-bordered table-hover table-sm w-auto row-border " id="dataTable"  >
                                         <thead>
                                             <tr>
-                                                <th>Séquence</th>
-                                                <th>Circuit autonome</th>
-                                                <th>Run</th>
-                                                <th>Date début</th>
-                                                <th>Date fin</th>
-                                                <th>Durée du run</th>
-                                                <th>Total</th>
-                                                <th>Test Recyclage</th>
-                                                <th>Test delta Température</th>
-                                                <th>Test delta Pression</th>
-                                                <th>Validation globale</th>
-                                                <th>Alarme</th>
-                                                <th>Check</th>
-                                                <th>Commentaires</th>
+                                                <th class="small font-weight-bold">Séquence</th>
+                                                <th class="small font-weight-bold">Circuit autonome</th>
+                                                <th class="small font-weight-bold">Run</th>
+                                                <th class="small font-weight-bold">Date début</th>
+                                                <th class="small font-weight-bold">Date fin</th>
+                                                <th class="small font-weight-bold">Durée du run</th>
+                                                <th class="small font-weight-bold">Total</th>
+                                                <th class="small font-weight-bold">Test Recyclage</th>
+                                                <th class="small font-weight-bold">Test delta Température</th>
+                                                <th class="small font-weight-bold">Test delta Pression</th>
+                                                <th class="small font-weight-bold">Validation globale</th>
+                                                <th class="small font-weight-bold">Alarme</th>
+                                                <th class="small font-weight-bold">Check</th>
+                                                <th class="small font-weight-bold">Commentaires</th>zdazdadad
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @for ($i = 0; $i < 100; $i++)
                                             <tr>
-                                                <td>n°1</td>
+                                                <td><a href="#" class="text-primary">n°1</a></td>
                                                 <td>Pasto stand</td>
                                                 <td>n°8</td>
                                                 <td>13/05/2019</td>
@@ -85,8 +85,8 @@
                                             
                                         </tbody>
                                     </table>
-                                </div>
-                            </div>
+<!--                                </div>
+                            </div>-->
                         </div>
 
                     </div>
